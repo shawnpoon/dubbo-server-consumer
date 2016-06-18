@@ -21,7 +21,7 @@ public class WebUserController {
 
 	@RequestMapping("/test")
 	public void test(HttpServletRequest request, HttpServletResponse response, Model model) {
-		User user = userService.getUser(159);
+		User user = userService.createUser("newName", "newPass");
 		String json = JsonUtil.Object2JsonStr(user);
 		ResponseHandler.outputJson(response, json);
 	}
