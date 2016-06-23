@@ -10,9 +10,6 @@
         <dependent-module archiveName="server-web-api-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-web-api/server-web-api">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="server-entity-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/server-entity/server-entity">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <property name="context-root" value="server-consumer"/>
         <property name="java-output-path" value="/server-consumer/target/classes"/>
     </wb-module>
